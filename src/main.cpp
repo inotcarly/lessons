@@ -228,6 +228,11 @@ void autonomous(void) {
 PIDDataSet TestPara={4,0.1,0.2};
 Zeroing(true,true);
 
+if (!EXIT) {
+  AutoSelectorVal = 1;
+  EXIT = true;
+}
+
 //can start editing if nessary
 //Put Auto route function into if statements to use autoselector
 if(AutoSelectorVal==1)//Quali close 6 triball auto 
